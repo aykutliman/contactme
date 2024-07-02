@@ -1,15 +1,17 @@
 img {
     height: 200px;
     width: 200px;
-    border-radius: 1000px ;
+    border-radius: 100% ;
 }
 
-.profile {
-    padding-top: 50px;
+.content {
+    margin-top: 40px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 50px;
+    background-color: #3f3f3f;
 }
 
 h4 {
@@ -32,23 +34,41 @@ body {
     background-color: black;
 }
 
-div {
-    background-color: #1c1c1c;
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.social-box {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-color: #666666;
+ border-radius: 10px;
+ width: 350px;
+ height: 30px;
 }
 
 h3 {
     color: white;
-    background-color: #666666;
-    border-radius: 10px;
-    width: 300px;
-    height: 35px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
-    margin: 50px 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
+
 }
+
+@media screen and (max-width: 420px) {
+    .social-box {
+        width: 100%;
+        max-width: 350px;
+    }
+  }
